@@ -1,0 +1,7 @@
+---
+- name: Set User Avatar
+  become: false
+  copy:
+    src: files/dogbert.jpg
+    dest: "{{ local_user_homedir }}/.face"
+    mode: 0644
